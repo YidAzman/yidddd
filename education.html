@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education</title>
+  <link rel="stylesheet" href="education.css">
+</head>
+<body>
+
+ 
+  <nav>
+    <div class="top">
+       <div id="digital-clock"></div>
+    </div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="education.html">Education</a>
+      <a href="Skill.html">Gallery</a>
+      <a href="Experience.html">Experience</a>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <h1 class="title">My Education Journey</h1>
+
+    
+    <section class="school">
+      <div class="school-image-container">
+        <img src="skpekan.jpg" alt="Sekolah Kebangsaan Pekan Jaya" class="school-image">
+      </div>
+      <div class="school-content">
+        <h2>Sekolah Kebangsaan Pekan Jaya</h2>
+        <p><strong>Duration:</strong> 2011 - 2016</p>
+        <p>This school built my academic foundation and exposed me to teamwork and various extracurricular activities.</p>
+      </div>
+    </section>
+
+   
+    <section class="school">
+      <div class="school-image-container">
+        <img src="kulliah1.png" alt="Kulliah AL-Lughah Waddin AS-Sultan Abu Bakar" class="school-image">
+      </div>
+      <div class="school-content">
+        <h2>Kulliah AL-Lughah Waddin AS-Sultan Abu Bakar</h2>
+        <p><strong>Duration:</strong> 2017 - 2021</p>
+        <p>Here, I enhanced my knowledge in Islamic studies and developed critical thinking skills that shaped my educational path.</p>
+      </div>
+    </section>
+
+
+    <section class="school">
+      <div class="school-image-container">
+        <img src="uitm.jpg" alt="Universiti Teknologi Mara Cawangan Johor" class="school-image">
+      </div>
+      <div class="school-content">
+        <h2>Universiti Teknologi Mara Cawangan Johor</h2>
+        <p><strong>Duration:</strong> 2022 - Present</p>
+        <p>Pursuing a diploma in Information Management Systems, I focus on developing technical expertise and professional readiness.</p>
+      </div>
+    </section>
+
+    <section class="social-media">
+      <h3>Connect with me:</h3>
+      <div class="icon-container">
+        <a href="https://www.instagram.com/yiddddd._/profilecard/?igsh=MWgzYTJudXgxcTV0cA==" target="_blank" class="social-btn">
+          <img src="insta.png" alt="Instagram">
+        </a>
+        <a href="https://wa.link/6ur9fr" target="_blank" class="social-btn">
+          <img src="whatsapp.png" alt="WhatsApp">
+        </a>
+        <a href="https://t.me/yidddddddddddd" target="_blank" class="social-btn">
+          <img src="tele.png" alt="Telegram">
+        </a>
+        <a href="mailto:sayyidazman@gmail.com" class="social-btn">
+          <img src="gmail.png" alt="Gmail">
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+<script>
+ function updateClock() {
+  const clockElement = document.getElementById('digital-clock');
+  const now = new Date();
+
+  // Format time
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+
+  // Display time
+  clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
+// Initialize the clock immediately
+updateClock();
+</script>
+
+
+</body>
+</html>

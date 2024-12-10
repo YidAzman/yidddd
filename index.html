@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <nav>
+    <div class="top">
+     <div id="digital-clock"></div>
+    </div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="education.html">Education</a>
+      <a href="Skill.html">Gallery</a>
+      <a href="Experience.html">Experience</a>
+    </div>
+      </nav>
+
+ 
+  <div class="container">
+    <div class="profile-section">
+      <div class="profile-photo">
+        <img src="yid2.jpg" alt="Yid's Photo">
+      </div>
+      <div class="content">
+        <h1>Welcome To My Portfolio</h1>
+        <p>
+          My name is Ahmad Sayyid Bin Muhamad Azman and I am a student of Universiti Teknologi MARA at Segamat Johor and currently in my last semester for a diploma in Information Management.
+        </p>
+        <button onclick="location.href='about.html'">Learn More</button>
+      </div>
+    </div>
+  </div>
+
+ 
+  <section class="social-media">
+    <h3>Connect with me:</h3>
+    <div class="icon-container">
+      <a href="https://www.instagram.com/yiddddd._/profilecard/?igsh=MWgzYTJudXgxcTV0cA==" target="_blank" class="social-btn">
+        <img src="insta.png" alt="Instagram">
+      </a>
+      <a href="https://wa.link/6ur9fr" target="_blank" class="social-btn">
+        <img src="whatsapp.png" alt="WhatsApp">
+      </a>
+      <a href="https://t.me/yidddddddddddd" target="_blank" class="social-btn">
+        <img src="tele.png" alt="Telegram">
+      </a>
+      <a href="mailto:hilmanahmad0547@gmail.com" class="social-btn">
+        <img src="gmail.png" alt="Gmail">
+      </a>
+    </div>
+  </section>
+ <script>
+ function updateClock() {
+  const clockElement = document.getElementById('digital-clock');
+  const now = new Date();
+
+  // Format time
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const seconds = String(now.getSeconds()).padStart(2, '0');
+
+  // Display time
+  clockElement.textContent = `${hours}:${minutes}:${seconds}`;
+}
+
+// Update the clock every second
+setInterval(updateClock, 1000);
+
+// Initialize the clock immediately
+updateClock();
+</script>
+</body>
+</html>
+
